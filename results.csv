@@ -1,0 +1,11 @@
+environment,task,time,notes
+jupyter,Athena CTAS parquet snappy, 19, Athena create table as using parquet with snappy compression
+jupyter,Athena CTAS parquet gzip, 21, Athena create table as using parquet with gzip compression
+jupyter,Athena stanard csv read, 117, Athena run query then read results from s3
+jupyter,Read csv from ssd, 40, Using late 2013 macbook pro 2.6 GHz Intel Core i7 16gb ram
+jupyter,Read parquet from ssd, 8, Using late 2013 macbook pro 2.6 GHz Intel Core i7 16gb ram
+jupyter,Read from sqlite on ssd, 160, Using late 2013 macbook pro 2.6 GHz Intel Core i7 16gb ram
+jupyter,RDS postgres db.t2.large, 43, Using sagemaker m4.xlarge in same region as db
+jupyter,pyathenajdbc version 2.0.0,5942,Using the JDBC drivers
+r_studio,1.0.3 ODBC driver,1145,Took too long to execute using 10 million rows this result is multiplying time for 1 million by 10
+
