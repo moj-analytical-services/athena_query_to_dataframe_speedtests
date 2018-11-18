@@ -1,5 +1,19 @@
 # athena_query_to_dataframe_speedtests
 
+We're testing against 10 million records from the flights database.  The dataset in csv format is 1.29Gb on disk.
+
+### Performance so far:
+
+### In Python
+
+Athena create table as using parquet, snappy compression: 19 seconds
+Athena create table as using parquet, gzip compression: 21 seconds
+Athena standard query outputting to csv: 117 seconds
+Read from disk in `csv` format on macbook pro: 40 seconds
+Read from disk in `parquet` format on macbook pro: 8 seconds
+Read from sqlite databse on disk: 160 seconds
+
+
 This repo contains various code snippets that we've used to time the performance of data reads into pandas.
 
 Specifically, we're interested in optimising reading sql query results into pandas dataframes.
@@ -15,7 +29,7 @@ In this repo we test various things:
 
 
 
-### Performance so far:
+
 
 
 
